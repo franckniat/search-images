@@ -39,7 +39,7 @@ export default async function Gallery({topic = "curated", page}:Props){
                     <ImageContainer key={photo.id} photo={photo}/>
                 ))}
             </section>
-            <Pagination topic={topic} page={page} nextPage={nextPage} prevPage={prevPage}/>
+            <Pagination {...paginationProps}/>
         </>
 
     )
