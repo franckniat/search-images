@@ -15,15 +15,15 @@ export default  function Navbar(){
             <div className="mx-auto max-w-[1400px] px-6">
                 <div className="flex items-center justify-between h-[70px]">
                     <Link href="/">
-                        <h1 className="text-2xl">Pexels clone</h1>
+                        <h1 className="text-2xl font-bold">Pexels clone</h1>
                     </Link>
                     <div className="max-w-xl w-full">
                         <SearchForm/>
                     </div>
                     <div>
                         <Button onClick={handleThemeChange} className="relative rounded-full" variant="outline" size="icon">
-                            <Moon className="scale-0 dark:scale-100 transition" size={20}/>
-                            <Sun className="absolute scale-100 dark:scale-0 transition" size={20}/>
+                            <Moon className="scale-0 dark:scale-100 rotate-45 dark:rotate-0 transition" size={20}/>
+                            <Sun className="absolute scale-100 dark:scale-0 rotate-45 dark:rotate-0 transition" size={20}/>
                         </Button>
                     </div>
                 </div>
